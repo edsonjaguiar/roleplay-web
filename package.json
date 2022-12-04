@@ -12,7 +12,7 @@
         "pre-commit": "eslint --fix"
     },
     "lint-staged": {
-        "src/**/*.{ts,tsx}": [
+        "*.{ts,tsx}": [
             "yarn pre-commit"
         ]
     },
