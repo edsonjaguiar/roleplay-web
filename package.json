@@ -11,6 +11,11 @@
         "lint": "next lint",
         "pre-commit": "eslint --fix"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "echo 'Teste'"
+        }
+    },
     "lint-staged": {
         "src/**/*.{ts,tsx}": [
             "yarn pre-commit"

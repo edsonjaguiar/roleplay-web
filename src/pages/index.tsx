@@ -12,8 +12,7 @@ export default function Home() {
 
     const copyToClipBoard = async () => {
         await navigator.clipboard.writeText('Kadu#9909');
-        al;
-        ert('Texto copiado!');
+        alert('Texto copiado!');
     };
 
     return (
