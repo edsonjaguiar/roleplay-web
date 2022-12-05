@@ -107,7 +107,7 @@ export default function Navbar() {
                 </ul>
 
                 {session ? (
-                    <div className="-mt-2 items-center">
+                    <div className="-mt-3 items-center">
                         <Popover className="relative">
                             <Popover.Button className="border-2 rounded-full p-1 border-pink-600 background-transparent outline-none items-center">
                                 <Image
