@@ -1,20 +1,19 @@
-import notFound from '@/assets/notFound.json';
-import Link from 'next/link';
-import { CaretCircleLeft } from 'phosphor-react';
-import ReactLottie from 'react-lottie';
+// import ReactLottie from 'react-lottie';
 
-const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-    },
-};
+// const defaultOptions = {
+//     loop: true,
+//     autoplay: true,
+//     rendererSettings: {
+//         preserveAspectRatio: 'xMidYMid slice',
+//     },
+// };
 
 export default function PageNotFound() {
     return (
         <div className="flex items-center justify-center gap-20">
-            <div className="hidden lg:block lg:visible">
+            <p>Teste</p>
+
+            {/* <div className="hidden lg:block lg:visible">
                 <ReactLottie
                     options={{ animationData: notFound, ...defaultOptions }}
                     width={500}
@@ -39,6 +38,7 @@ export default function PageNotFound() {
                     Voltar para a página inicial
                 </Link>
             </div>
+         */}
         </div>
     );
 }
