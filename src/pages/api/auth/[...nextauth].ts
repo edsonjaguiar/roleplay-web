@@ -19,7 +19,7 @@ export const authOptions = {
                 },
             },
 
-            profile(profile) {
+            profile(profile: any) {
                 return {
                     id: profile.id.toString(),
                     idUser: profile.id,
