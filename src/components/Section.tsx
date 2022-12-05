@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface Props {
+type Props = {
     children: React.ReactNode;
     type?: 'NORMAL' | 'REVERSE';
-}
+};
 
 export default function Section({ children, type = 'REVERSE' }: Props) {
     return (
