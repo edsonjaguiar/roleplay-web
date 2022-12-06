@@ -16,10 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <SessionProvider session={pageProps.session}>
             <Head>
-                <title>Miami City</title>
+                <title>Roleplay Web</title>
                 <link
                     rel="shortcut icon"
-                    href="/favicon.jpg"
+                    href="/favicon.jpeg"
                     type="image/x-icon"
                 />
             </Head>
