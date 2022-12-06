@@ -1,13 +1,6 @@
 import Button from '@/components/Button';
 import Loading from '@/components/Loading';
-import StepEight from '@/components/Steps/StepEight';
-import StepFive from '@/components/Steps/StepFive';
-import StepFour from '@/components/Steps/StepFour';
-import StepNine from '@/components/Steps/StepNine';
 import StepOne from '@/components/Steps/StepOne';
-import StepSeven from '@/components/Steps/StepSeven';
-import StepSix from '@/components/Steps/StepSix';
-import StepTen from '@/components/Steps/StepTen';
 import StepThree from '@/components/Steps/StepThree';
 import StepTwo from '@/components/Steps/StepTwo';
 import useMultistepForm from '@/hooks/useMultistepForm';
@@ -21,12 +14,6 @@ type FormData = {
     answerHistory: string;
     answerRDM: string;
     answerVDM: string;
-    answerAntLoveLife: string;
-    answerPowerGaming: string;
-    answerCombatLogging: string;
-    answerMetaGame: string;
-    answerDarkRP: string;
-    answerSafeZone: string;
 };
 
 const INITIAL_DATA: FormData = {
@@ -34,12 +21,6 @@ const INITIAL_DATA: FormData = {
     answerHistory: '',
     answerRDM: '',
     answerVDM: '',
-    answerAntLoveLife: '',
-    answerPowerGaming: '',
-    answerCombatLogging: '',
-    answerMetaGame: '',
-    answerDarkRP: '',
-    answerSafeZone: '',
 };
 
 export default function WhiteList() {
@@ -65,13 +46,6 @@ export default function WhiteList() {
         <StepOne key={1} {...data} updateFields={updateFields} />,
         <StepTwo key={2} {...data} updateFields={updateFields} />,
         <StepThree key={3} {...data} updateFields={updateFields} />,
-        <StepFour key={4} {...data} updateFields={updateFields} />,
-        <StepFive key={5} {...data} updateFields={updateFields} />,
-        <StepSix key={6} {...data} updateFields={updateFields} />,
-        <StepSeven key={7} {...data} updateFields={updateFields} />,
-        <StepEight key={8} {...data} updateFields={updateFields} />,
-        <StepNine key={9} {...data} updateFields={updateFields} />,
-        <StepTen key={10} {...data} updateFields={updateFields} />,
     ]);
 
     const onSubmit = async (event: FormEvent) => {
@@ -85,7 +59,7 @@ export default function WhiteList() {
                     title: 'White List',
                     color: 7506394,
                     thumbnail: {
-                        url: 'https://images-ext-2.discordapp.net/external/-ZRYobxbzYnZQKCEpnc3IwleVv5DAsIZGLifJfDI0IM/https/cdn.discordapp.com/icons/993542056930717707/016eee00e7e7dc9b3888ac5ab369f709.png',
+                        url: 'https://images.unsplash.com/photo-1491833485966-73cfb9ccea53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
                     },
                     fields: [
                         {
@@ -111,27 +85,6 @@ export default function WhiteList() {
                         {
                             name: 'O que é VDM?',
                             value: data.answerVDM,
-                        },
-                        {
-                            name: 'O que é Power Gaming?',
-                            value: data.answerPowerGaming,
-                        },
-                        {
-                            name: 'O que é Combat Logging?',
-                            value: data.answerCombatLogging,
-                        },
-                        {
-                            name: 'O que é Dark RP?',
-                            value: data.answerDarkRP,
-                        },
-                        {
-                            name: 'O que é Meta Gaming?',
-                            value: data.answerMetaGame,
-                        },
-
-                        {
-                            name: 'O que é Safe Zone?',
-                            value: data.answerSafeZone,
                         },
                     ],
                 },

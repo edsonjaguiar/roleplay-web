@@ -5,9 +5,10 @@ export default function Footer() {
                 <p className="text-base">
                     Miami Roleplay &copy; 2022 By{' '}
                     <a
-                        href="/"
+                        href="https://github.com/edsonjaguiar"
                         target="_blank"
                         className="underline underline-offset-8 hover:text-zinc-200 transition-colors"
+                        rel="noreferrer"
                     >
                         Edson
                     </a>

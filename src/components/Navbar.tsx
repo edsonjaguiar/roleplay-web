@@ -33,13 +33,13 @@ export default function Navbar() {
         },
         {
             text: 'Discord',
-            link: 'https://discord.gg/geDhT3gbVm',
+            link: '', // Link do seu grupo do Discord do jogo
             target: '_blank',
             icon: <DiscordLogo size={22} weight="bold" className="mr-2" />,
         },
         {
             text: 'Jogar',
-            link: 'https://www.roblox.com/games/10840685904/Miami-City-BETA',
+            link: '', // Link do seu jogo
             target: '_blank',
             icon: <GameController size={22} weight="bold" className="mr-2" />,
         },
@@ -55,7 +55,7 @@ export default function Navbar() {
                         href="/"
                         className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-700"
                     >
-                        Miami City
+                        Roleplay Web
                     </Link>
                 </h1>
 

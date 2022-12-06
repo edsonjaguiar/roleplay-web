@@ -11,7 +11,7 @@ export default function Home() {
     const { data: session } = useSession();
 
     const copyToClipBoard = async () => {
-        await navigator.clipboard.writeText('Kadu#9909');
+        await navigator.clipboard.writeText('User#0000'); // Seu usuário do Discord aqui
         alert('Texto copiado!');
     };
 
@@ -24,10 +24,10 @@ export default function Home() {
                         Season V1.
                     </span>
                     <h1 className="text-3xl leading-snug font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-700 mb-8 lg:text-5xl lg:leading-snug lg:whitespace-pre">
-                        {`Miami Roleplay, o\nmelhor do Roblox`}
+                        {`Roleplay Web, o\nmelhor do Roblox`}
                     </h1>
                     <p className="text-gray-600 mb-8 text-base lg:whitespace-pre">
-                        {`Miami City é um jogo focado na vida real (Roleplay), com\numa experiência única.`}
+                        {`Roleplay Web é um jogo focado na vida real (Roleplay), com\numa experiência única.`}
                     </p>
 
                     {session ? (
@@ -65,13 +65,14 @@ export default function Home() {
                         Sobre
                     </h2>
                     <p className="text-gray-600 mb-8 text-base text-justify">
-                        Miami Roleplay consiste em você criar uma vida,
-                        trabalhar pra ganhar sua grana e comprar as coisas
-                        necessárias. Além disso, você escolhe o que quer ser,
-                        como ser criminoso onde você rouba coisas para ganhar
-                        dinheiro, ou ser policial para proteger a cidade e fazer
-                        ações, ou também você trabalha honesto ou vira corrupto,
-                        não quebre a economia.
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney
+                        College in Virginia, looked up one of the more obscure
+                        Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going through the cites of the word in classical
+                        literature, discovered the undoubtable source.
                     </p>
                 </div>
             </Section>
@@ -92,14 +93,14 @@ export default function Home() {
                         </div>
                         <div className="text-center">
                             <h4 className="text-2xl text-slate-800 font-bold">
-                                Carlos
+                                Seu nome Aqui
                             </h4>
                             <button
                                 className="text-gray-600 font-medium"
                                 onClick={copyToClipBoard}
                             >
                                 <span className="text-blue-500">@</span>
-                                Kadu#9909
+                                nameDiscord#0000
                             </button>
                         </div>
                     </div>
