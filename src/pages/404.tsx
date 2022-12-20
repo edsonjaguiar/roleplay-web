@@ -1,23 +1,18 @@
-// import ReactLottie from 'react-lottie';
+import Image from 'next/image';
+import Link from 'next/link';
+import { CaretCircleLeft, Robot } from 'phosphor-react';
 
-// const defaultOptions = {
-//     loop: true,
-//     autoplay: true,
-//     rendererSettings: {
-//         preserveAspectRatio: 'xMidYMid slice',
-//     },
-// };
+import notFound from '@/assets/notFound.svg';
 
 export default function PageNotFound() {
     return (
         <div className="flex items-center justify-center gap-20">
-            <p>Teste</p>
-
-            {/* <div className="hidden lg:block lg:visible">
-                <ReactLottie
-                    options={{ animationData: notFound, ...defaultOptions }}
-                    width={500}
-                    height={500}
+            <div className="hidden xl:block">
+                <Image
+                    src={notFound}
+                    alt="Not Found image"
+                    width={400}
+                    height={400}
                 />
             </div>
 
@@ -25,9 +20,9 @@ export default function PageNotFound() {
                 <h1 className="text-6xl font-bold text-red-500 sm:text-8xl">
                     Error 404!
                 </h1>
-                <p className="text-sm mt-4 text-center text-gray-600 sm:text-base">
+                <p className="flex items-center text-sm mt-4 text-center text-gray-600 sm:text-base">
                     Eita, parece que página que você requisito não foi
-                    encontrada 🤖
+                    encontrada! <Robot size={24} weight="bold" />
                 </p>
 
                 <Link
@@ -38,7 +33,6 @@ export default function PageNotFound() {
                     Voltar para a página inicial
                 </Link>
             </div>
-         */}
         </div>
     );
 }
