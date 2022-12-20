@@ -53,44 +53,6 @@ export default function WhiteList() {
 
         if (!isLastStep) return nextQuestion();
 
-        const messageData = {
-            embeds: [
-                {
-                    title: 'White List',
-                    color: 7506394,
-                    thumbnail: {
-                        url: 'https://images.unsplash.com/photo-1491833485966-73cfb9ccea53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-                    },
-                    fields: [
-                        {
-                            name: 'Menção',
-                            value: `<@${session?.user.idUser}>`,
-                        },
-                        {
-                            name: 'Username',
-                            value: session?.user.username,
-                        },
-                        {
-                            name: 'Username Roblox',
-                            value: data.answerName,
-                        },
-                        {
-                            name: 'História',
-                            value: data.answerHistory,
-                        },
-                        {
-                            name: 'O que é RDM?',
-                            value: data.answerRDM,
-                        },
-                        {
-                            name: 'O que é VDM?',
-                            value: data.answerVDM,
-                        },
-                    ],
-                },
-            ],
-        };
-
         Router.push('/');
         alert(
             'Para você saber se passou ou não, entre na comunidade do Discord!'
@@ -98,7 +60,10 @@ export default function WhiteList() {
 
         try {
             await axios.post('/api/sendWebhook', {
-                messageData,
+                answerName: data.answerName,
+                answerHistory: data.answerHistory,
+                answerRDM: data.answerRDM,
+                answerVDM: data.answerVDM,
             });
         } catch (error) {
             console.log(error);
