@@ -60,13 +60,10 @@ export default function WhiteList() {
             answerRDM: '',
             answerVDM: '',
         });
-        toast(
-            'Para você saber se passou ou não, entre na comunidade do Discord! Em 2 dias, se você não entrar sua White List será desconsiderada!',
-            {
-                autoClose: 2000,
-                type: 'success',
-            }
-        );
+        toast('White List enviada!', {
+            autoClose: 2000,
+            type: 'success',
+        });
 
         try {
             await axios.post('/api/sendWebhook', {

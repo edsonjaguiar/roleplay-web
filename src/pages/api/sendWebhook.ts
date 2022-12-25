@@ -18,7 +18,7 @@ export default async function handler(
                     title: 'White List',
                     color: 7506394,
                     thumbnail: {
-                        url: 'https://media.discordapp.net/attachments/882683832980111410/1048834645141229568/m.jpg',
+                        url: 'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                     },
                     fields: [
                         {

@@ -5,6 +5,7 @@ import { Poppins } from '@next/font/google';
 import { SessionProvider } from 'next-auth/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { ToastContainer } from 'react-toastify';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -29,6 +30,8 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Component {...pageProps} />
                 <Footer />
             </main>
+
+            <ToastContainer />
         </SessionProvider>
     );
 }

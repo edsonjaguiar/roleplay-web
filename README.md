@@ -21,7 +21,7 @@
 -   Tailwindcss
 -   Husky
 -   Lint-staged
--   clsx
+-   Clsx
 -   Prisma ORM
 -   Phosphor-react
 -   Headless-ui
