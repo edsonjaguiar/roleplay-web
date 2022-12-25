@@ -6,8 +6,9 @@ import StepTwo from '@/components/Steps/StepTwo';
 import useMultistepForm from '@/hooks/useMultistepForm';
 import axios from 'axios';
 import { signIn, useSession } from 'next-auth/react';
-import Router from 'next/router';
 import { FormEvent, useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 type FormData = {
     answerName: string;
@@ -53,9 +54,18 @@ export default function WhiteList() {
 
         if (!isLastStep) return nextQuestion();
 
-        Router.push('/');
-        alert(
-            'Para você saber se passou ou não, entre na comunidade do Discord!'
+        setData({
+            answerName: '',
+            answerHistory: '',
+            answerRDM: '',
+            answerVDM: '',
+        });
+        toast(
+            'Para você saber se passou ou não, entre na comunidade do Discord! Em 2 dias, se você não entrar sua White List será desconsiderada!',
+            {
+                autoClose: 2000,
+                type: 'success',
+            }
         );
 
         try {
@@ -66,7 +76,10 @@ export default function WhiteList() {
                 answerVDM: data.answerVDM,
             });
         } catch (error) {
-            console.log(error);
+            toast(error as string, {
+                autoClose: 2000,
+                type: 'error',
+            });
         }
     };
 
