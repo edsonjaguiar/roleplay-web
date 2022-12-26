@@ -6,13 +6,18 @@ import Section from '@/components/Section';
 import { signIn, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import { StarFour } from 'phosphor-react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
     const { data: session } = useSession();
 
     const copyToClipBoard = async () => {
         await navigator.clipboard.writeText('User#0000'); // Seu usuário do Discord aqui
-        alert('Texto copiado!');
+        toast('Texto copiado!', {
+            autoClose: 2000,
+            type: 'success',
+        });
     };
 
     return (
